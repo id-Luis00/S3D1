@@ -87,6 +87,21 @@ console.log('con arrow function() --------------->',evenNumbers2(arrayNum))
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
+
+const Somma = (array) => {
+  let somma = 0;
+
+  array.forEach(current_number => {somma += current_number});
+
+  return somma
+}
+
+const somma = Somma(arrayNum);
+
+
+console.log('Somma di numeri casuali --------->',somma)
+
+
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
