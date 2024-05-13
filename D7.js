@@ -33,6 +33,38 @@ console.log('tutto maiuscolo -------->',Maiuscole.toUpperCase()/* [0].slice(0, 2
 */
 
 
+function tenElements () {                  /* ---------------> ritorna un array di 10 numeri */
+  const arrayElements = [];
+
+  for(i=0; i<10; i++) {
+    let randomNum = Math.floor(Math.random() * 101)
+    arrayElements.push(randomNum)
+  }
+
+  return arrayElements;
+}
+
+
+
+const arrayNum = tenElements()
+console.log(arrayNum)
+
+
+
+const tenElement_Arrow = () => {           /*  --------------> la stessa cosa ma con arrow function() */
+  const arrayElements = [];
+
+  for(i=0; i<10; i++) {
+    let randomNum = Math.floor(Math.random() * 101)
+    arrayElements.push(randomNum)
+  }
+
+  return arrayElements;
+}
+
+console.log(tenElement_Arrow())   
+
+
 
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
