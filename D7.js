@@ -70,6 +70,19 @@ console.log(tenElement_Arrow())
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 */
 
+
+// riciclo l'array di prima dell'esercizio 2
+
+function evenNumbers (string_numbers) {
+  return string_numbers.filter(current_number => current_number % 2 === 0)
+}
+
+console.log('function normale ---------------->',evenNumbers(tenElement_Arrow()))
+
+const evenNumbers2 = (string_numbers) => string_numbers.filter(current_number => current_number % 2 === 0)
+
+console.log('con arrow function() --------------->',evenNumbers2(arrayNum))
+  
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
