@@ -106,18 +106,56 @@ console.log('Somma di numeri casuali --------->',somma)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
+
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
+
+const array6 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+const n = Math.floor(Math.random() * 20)
+
+
+
+const newArray6 = array6.map( (current_element) =>{
+  const n = Math.floor(Math.random() * 20)
+  return current_element * n
+} )
+
+console.log('prima della funzione dell\'esercizio 6 ----------->',array6)
+console.log('dopo la function dell\'esercizio 6 -------------------------------->',newArray6)
+
 
 /* ESERCIZIO 7 (map)
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
 
+const array7 = ['edinson', 'luis', 'quiroz', 'mendoza'];
+
+const newArray7 = array7.map(stringa_corrente => stringa_corrente.length);
+
+console.log('esercizio 7 ------------->',newArray7)
+
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
+
+
+
+function numeriDispari () {
+  const array8 = [];
+
+  for(i=1; i<11; i++) {
+    const randomNumber = Math.floor(Math.random() * 99) + 1
+    if(randomNumber % 2 !== 0) {
+      array8.push(randomNumber)
+    }
+  }
+  return array8
+}
+
+console.log('elementi dispari di un array ------->',numeriDispari())
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
